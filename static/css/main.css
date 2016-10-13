@@ -1,0 +1,138 @@
+/* CSS declarations go here */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
+.parallax img {
+  max-height: 264%;
+  max-width: 3200%;
+}
+
+.parallax-container {
+  height: 400px;
+}
+
+@media only screen and (max-width:  992px) {
+  /* Tablet devices */
+  .parallax img {
+    max-height: 198%;
+    max-width: 300%;
+  }
+  .parallax-container {
+  height: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {  
+  /* Mobile devices */
+  .parallax img {
+    max-height: 165%;
+    max-width: 250%;
+  }
+  .parallax-container {
+  height: 40vh;
+}
+}
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto
+}
+
+nav * {
+  color: black !important;
+}
+
+.nav-wrapper li a {
+  font-size: 115%;
+}
+
+.nudge-left {
+  margin-right: 20px;
+}
+.nudge-right {
+  margin-left: 20px;
+}
+
+.carousel.carousel-slider{
+  max-width: 500px;
+  max-height:500px;
+  min-height: 450px;
+   border-radius: 25px;
+}
+
+.carousel-item {
+  padding: 10px;
+  max-width: 100%;
+}
+
+.carousel-item * {
+   -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+.technology {
+  width: 50%;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.portfolio-logo {
+  width: 50%;
+}
+
+.portfolio-logo img{
+  width: auto;
+  height: 100%;
+}
+
+.portfolio-link {
+  background-color: rgba(255,255,255,0.45);
+  border-radius:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.more-info {
+  border-bottom: grey dashed 1px;
+}
+
+.mono {
+ font-family: 'Roboto Mono', monospace;
+}
+
+#compiling small{
+  font-size: 75%;
+  display: block;
+}
+
+.social-media-icons {
+  border-radius:25px;
+  padding-top:2rem;
+  padding-bottom:1rem;
+}
+
+/* animations */
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1em;    
+  }
+}
+@keyframes ellipsis {
+  to {
+    width: 1em;    
+  }
+}
