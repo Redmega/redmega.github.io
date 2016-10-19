@@ -1,9 +1,6 @@
 $(function() {
-  $(".button-collapse").sideNav();
-
-  $('.nav-wrapper a').click(function(){
-    $('.active').removeClass('active');
-    $('[href="'+this.attributes.href.value+'"]').parent().addClass('active');
+  $(".button-collapse").sideNav({
+    closeOnClick: true
   });
   $('.parallax').parallax();
   $('.carousel').carousel({

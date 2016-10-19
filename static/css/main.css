@@ -50,25 +50,6 @@ nav * {
   margin-left: 20px;
 }
 
-.carousel.carousel-slider{
-  max-width: 500px;
-  max-height:500px;
-  min-height: 450px;
-   border-radius: 25px;
-}
-
-.carousel-item {
-  padding: 10px;
-  max-width: 100%;
-}
-
-.carousel-item * {
-   -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
-}
-
 .technology {
   width: 50%;
   margin-top:auto;
@@ -110,6 +91,10 @@ nav * {
   border-radius:25px;
   padding-top:2rem;
   padding-bottom:1rem;
+}
+
+nav ul li > a.active {
+background-color: rgba(0,0,0,0.1);
 }
 
 /* animations */
