@@ -1,6 +1,9 @@
 $(function() {
-  $('.button-collapse').click(function(){
-    Materialize.toast("Responsive navbar isn't ready yet!",5000)
+  $(".button-collapse").sideNav();
+
+  $('.nav-wrapper a').click(function(){
+    $('.active').removeClass('active');
+    $('[href="'+this.attributes.href.value+'"]').parent().addClass('active');
   });
   $('.parallax').parallax();
   $('.carousel').carousel({
