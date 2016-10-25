@@ -1,0 +1,24 @@
+{
+  "name": "angelpiscola",
+  "version": "1.0.0",
+  "description": "Personal/professional website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redmega/redmega.github.io.git"
+  },
+  "author": "Angel Piscola <angelpiscola@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redmega/redmega.github.io/issues"
+  },
+  "homepage": "https://www.angelpiscola.com",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "html-minifier": "^3.1.0",
+    "yuicompressor": "^2.4.8"
+  }
+}
