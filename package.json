@@ -1,24 +1,23 @@
 {
-  "name": "angelpiscola",
-  "version": "1.0.0",
-  "description": "Personal/professional website",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "www.angelpiscola.com",
+  "description": "Personal website for Angel Piscola",
+  "author": "Angel Piscola <angelpiscola@gmail.com>",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redmega/redmega.github.io.git"
+    "url": "git@github.com:Redmega/redmega.github.io.git"
   },
-  "author": "Angel Piscola <angelpiscola@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/redmega/redmega.github.io/issues"
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
   },
-  "homepage": "https://www.angelpiscola.com",
+  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "html-minifier": "^3.1.0",
-    "yuicompressor": "^2.4.8"
+    "brunch": "^2.0.0",
+    "javascript-brunch": "^2.0.0",
+    "css-brunch": "^2.0.0",
+    "uglify-js-brunch": "^2.0.0",
+    "clean-css-brunch": "^2.0.0",
+    "auto-reload-brunch": "^2.0.0"
   }
 }
